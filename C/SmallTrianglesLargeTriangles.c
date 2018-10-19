@@ -10,10 +10,11 @@ struct triangle{
 
 typedef struct triangle triangle;
 
-int area(triangle t){
-    int p=(t.a+t.b+t.c)/2;
-    int area=sqrt(p*(p-t.a)*(p-t.b)*(p-t.c));
-    return area;
+int area(triangle tr){
+    int a=tr.a;
+    int b=tr.b;
+    int c=tr.c;
+    return (a+b+c)*(a-b+c)*(a+b-c)*(-a+b+c);
 }
 
 void swap(triangle* a,triangle* b){
