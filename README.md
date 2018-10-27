@@ -1,1 +1,1 @@
-# HackerrankPractices
+# Hackerrank
