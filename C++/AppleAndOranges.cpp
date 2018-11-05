@@ -6,18 +6,18 @@ vector<string> split_string(string);
 
 // Complete the countApplesAndOranges function below.
 void countApplesAndOranges(int s, int t, int a, int b, vector<int> apples, vector<int> oranges) {
-    int toranges=0;
-    int tapples=0;
+    vector<int> torange;
+    vector<int> tapple;
     
-    for(int i=0; i<apples.size() && oranges.size();i++){
-        if(a+apples[i]>=s && a+apples[i]<=t){
-            tapples++;
-        }
-        if(b-oranges[i]<=t && b-oranges[i]>=s){
-            toranges++;
-        }
-    }
-    cout << tapples << endl << toranges << endl;
+        for (int i : apples)
+            if ((a+i) >= s && (a+i) <= t)
+                tapple.push_back(i);
+                
+        for (int j : oranges)
+            if ((b+j) <= t && (b+j) >= s)
+                torange.push_back(j);
+            
+    cout<< tapple.size() << endl << torange.size() << endl;
 }
 
 int main()
