@@ -1,4 +1,4 @@
-Regex_Pattern = r'^\d+[A-Z]+[a-z]$'	# Do not delete 'r'.
+Regex_Pattern = r'^[0-9]{1,}[A-Z]+[a-z]+$'	# Do not delete 'r'.
 
 import re
 
