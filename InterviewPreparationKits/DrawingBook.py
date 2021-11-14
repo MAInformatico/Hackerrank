@@ -14,9 +14,9 @@ import sys
 #
 
 def pageCount(n, p):
-    df = math.floor(n/2)
+    dn = math.floor(n/2)
     dp = math.floor(p/2)
-    return min(dp, df-dp)
+    return min(dp, dn-dp)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
